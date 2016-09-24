@@ -1,17 +1,17 @@
 <?php 
+session_start();
 
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-    $session = $_SESSION['user_session'];
-    
-} else {
-    header("Location: index.php");
-    $dis = "disabled";
+if (session_status() == PHP_SESSION_NONE){
+    header('Location:index.php');
+}
+
+if (session_status() == PHP_SESSION_ACTIVE) {
+    if( isset($_SESSION['user_session']) && !empty($_SESSION['user_session']) ) 
+    $session = $_SESSION['user_session']; 
 }
 
 
-
-include 'includes/header.php' 
+include 'includes/header.php' ;
 
 
 
@@ -44,8 +44,11 @@ include 'includes/header.php'
 
 
             <?php
-            	if(check_session($session) == true ) { 	include "widgets/widget_uprofile.php"; } 
-             	else { include "widgets/widget_login.php";  }
+            	if(!empty($session))              { 	
+                    include "widgets/widget_uprofile.php"; 
+                } 	else { 
+
+                    include "widgets/widget_login.php";  }
             ?>
              
         
@@ -115,7 +118,7 @@ include 'includes/header.php'
 	           </div>	-->
 
 	            <?php
-            	if(check_session($session) == true ) { 	include "widgets/widget_status.php"; } 
+            	if(!empty($session))  { 	include "widgets/widget_status.php"; } 
              	?>
 	         
 
@@ -159,3 +162,4 @@ include 'includes/header.php'
     
 
 </html>
+

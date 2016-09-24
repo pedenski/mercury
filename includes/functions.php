@@ -2,16 +2,16 @@
 /* CONNECT TO DB PDO */
 function PDOconn() { //connect to remote DB
  $user = "app";
- $pass = "";
- $db = new PDO('mysql:host=;dbname=smsc', $user, $pass);
+ $pass = "a1b2c3d4";
+ $db = new PDO('mysql:host=10.167.95.39;dbname=smsc', $user, $pass);
  return $db;
 }
 
 /* CONNECT TO DB PDO */
 function PDOconnLocal() { //connect to remote DB
  $user = "root";
- $pass = "a1b2c3d4";
- $db = new PDO('mysql:host=127.0.0.1;dbname=mercury_db', $user, $pass);
+ $pass = "";
+ $db = new PDO('mysql:host=localhost;dbname=mercury_db', $user, $pass);
  return $db;
 }
 
