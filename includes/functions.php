@@ -2,8 +2,8 @@
 /* CONNECT TO DB PDO */
 function PDOconn() { //connect to remote DB
  $user = "app";
- $pass = "a1b2c3d4";
- $db = new PDO('mysql:host=10.167.95.39;dbname=smsc', $user, $pass);
+ $pass = "";
+ $db = new PDO('mysql:host=;dbname=smsc', $user, $pass);
  return $db;
 }
 
