@@ -69,7 +69,7 @@
 		</div>
 		
 		<!--count char textarea -->
-		<small><div id="charNum">80</div></small>
+		<small><span id="charNum">80</span> <span class="emptyerr"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Empty Message</span></small>
 		
 		</div>
 

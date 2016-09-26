@@ -55,6 +55,8 @@
 
 
 
+} else {
+	echo "cannot be emtpy";
 }
 
 

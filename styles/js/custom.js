@@ -57,6 +57,8 @@ $(document).ready(function(){
              {
                  $(data).fadeIn("slow").prependTo('ul.timeline');
                  $(".composer").val('');
+                 $("#charNum").hide();
+                 $('.emptyerr').show();
                  console.log(data); // show response from the php script.
              }
            });

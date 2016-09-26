@@ -13,7 +13,6 @@
 
 		 <div class="red-label"><a href="widgets/logout.php" class="font-fff"><i class="fa fa-sign-out font-fff"></i> logout</a></div>
 		<!-- <div class="info-label font-fff"><i class="fa fa-envelope ont-fff" aria-hidden="true"></i> xx Messages Sent </div> -->
-		
 			
 			
 		</div>
