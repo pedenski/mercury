@@ -25,7 +25,7 @@
 	      	<div class ="smscontent">
 	        	<div class="timeline-heading">
 	        		<a href="#" class="digits" data-toggle="tooltip" data-placement="top" title="4303">4303
-	        		<img width="16px" height="8px" src="./styles/images/icons/mail.png"/> 
+	        		<i class="fa fa-envelope-o"></i> 
 			
 			       	<a href="#" class="digits" data-toggle="tooltip" data-placement="top" title="<?php echo substr($num, -4); ?> ">	<?php echo substr($num, -4); ?> </a> 
 			      
