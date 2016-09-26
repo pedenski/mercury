@@ -56,8 +56,11 @@ table {
 
 /** WIDGET APP LIST **/
 .widg-heading-applist {
-    font-size:15px;
-    padding-bottom:4px;
+    font-size:12px;
+    background: #E9F2F9;
+    padding:5px;
+    border-radius: 2px;
+    margin-bottom:5px;
 }
     /** STATUS INDICATORS **/
     #on {
@@ -94,9 +97,19 @@ table {
     font-size: 12px;
 }
 .widg-heading{
-    border-bottom:1px solid #DBDBDB;
-    font-size:15px;
-    padding-bottom:4px;
+    font-size:12px;
+    background: #E9F2F9;
+    padding:5px;
+    border-radius: 2px;
+    margin-bottom:5px;
+
+}
+.hr {
+    margin-bottom:5px;
+    border-bottom: 1px solid #DBDBDB;
+    margin-top: 5px 
+} 
+
 }
 .font-fff {
     color: #fff;
@@ -184,8 +197,13 @@ table {
 	width:50px;
 	height: 50px;
     border-radius: 100%;
-    
+
 }
+    .h4-head {
+        font-size:12px;
+        
+       
+    }
 
     .red-label {
         display: inline-block;

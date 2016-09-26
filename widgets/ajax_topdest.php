@@ -17,7 +17,7 @@ foreach($toplist as $row) {
  
   <tr>
  
-    <td class="col-md-3 td-padding "><i class="fa fa-mobile"></i>  <?php echo $destination; ?></td>    
+    <td class="col-md-3 td-padding font_10 "><i class="fa fa-mobile"></i>  <?php echo $destination; ?></td>    
     <td  class="col-md-1 td-padding "><p class="text-right"><small><span class="label label-info"><?php echo $count; ?></span></td>
  
   </tr>  
