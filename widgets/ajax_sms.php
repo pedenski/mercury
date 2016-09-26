@@ -19,7 +19,7 @@
          		<div class="timeline-heading"> 
          			<a href="#" class="digits" data-toggle="tooltip" data-placement="top" title="<?php echo $origin; ?>"> 
          				<?php echo substr($origin, -4); ?> 
-         						<img width="16px" height="8px" src="./styles/images/icons/mail.png"/> 
+         						<i class="fa fa-envelope-o"></i>
 	
 	              	<a href="#" class="digits" data-toggle="tooltip" data-placement="top" title="<?php echo $dest; ?> ">
                  		<?php echo substr($dest, -7); ?> </a> 

@@ -1,6 +1,12 @@
 <?php include '../includes/functions.php' ?>
+<h4 class="widg-heading-applist"> APPLICATION LIST </h4 >
 <table class="custom_table table table-striped">
 <tbody>
+<tr>
+
+<td class="col-md-1 td-padding "> <small> App </small></td>
+<td class="col-md-1 td-padding text-center"> <small> Status </small></td>
+</tr>
 <?php
 $posts = get_app();
 foreach($posts as $row) {
@@ -13,10 +19,10 @@ foreach($posts as $row) {
 
   <tr>
 
-    <td class="col-md-1">
+    <td class="col-md-3">
     
-    <?php echo strtoupper($app_username); ?></td>    
-    <td  class="col-md-1"><p class="text-center"><small><?php echo $app_code ?></td>
+   <i class="fa fa-database"></i> <?php echo strtoupper($app_username); ?></td>    
+    
     <td class="col-md-1"><p class="text-right">
      
 

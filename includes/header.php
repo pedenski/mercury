@@ -18,7 +18,7 @@
     <!-- Custom CSS -->
     <!-- <link href="styles/css/3-col-portfolio.css" rel="stylesheet"> -->
     <link href="styles/css/custom.css" rel="stylesheet">
-
+    <link href="styles/css/font-awesome.min.css" rel="stylesheet">
 
 
 

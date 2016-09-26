@@ -37,7 +37,7 @@ table {
 /** STATUS TABLE PARAMS **/
 .custom_table{
     font-size: 10px;
-    width:100%;
+  
 }
 
 
@@ -45,33 +45,39 @@ table {
 .table>tbody>tr>td {
     padding: 1px;
     vertical-align: middle;
-    border-top:none;
 }
 
-
+/** WIDGET TOP LIST **/
+.td-padding{
+    padding:3px;
+}
  
 
 
-
-/** STATUS INDICATORS **/
-#on {
-	padding: 2px;
-	background: #2ECC71;
-	width:100%;
-	border-radius: 2px;
-	color:#fff;
-
+/** WIDGET APP LIST **/
+.widg-heading-applist {
+    font-size:15px;
+    padding-bottom:4px;
 }
+    /** STATUS INDICATORS **/
+    #on {
+    	padding: 2px;
+    	background: #2ECC71;
+    	width:100%;
+    	border-radius: 2px;
+    	color:#fff;
 
-#off {
-	padding: 2px;
-	background: #EC7063;
-	width:100%;
-	border-radius: 2px;
-	color:#fff;
+    }
+
+    #off {
+    	padding: 2px;
+    	background: #EC7063;
+    	width:100%;
+    	border-radius: 2px;
+    	color:#fff;
 
 
-}
+    }
 
 
 /** PARAMS **/
@@ -87,9 +93,18 @@ table {
 .font_10 {
     font-size: 12px;
 }
-
-
-
+.widg-heading{
+    border-bottom:1px solid #DBDBDB;
+    font-size:15px;
+    padding-bottom:4px;
+}
+.font-fff {
+    color: #fff;
+}
+    a.font-fff {
+    color: #fff;
+    text-decoration: none;
+}
 
 
 /** GLOBAL **/
@@ -97,7 +112,7 @@ table {
 	background: #fff;
 	width:100%;
 	padding: 8px;
-	
+	border-radius: 4px;
 
 }
 
@@ -164,11 +179,32 @@ table {
 
 }
 
+/** WIDGET USER PROFILE **/
 .cus_avatar {
-	width:40px;
-	height: 40px;
+	width:50px;
+	height: 50px;
+    border-radius: 100%;
+    
 }
 
+    .red-label {
+        display: inline-block;
+        width: 65px;
+        font-size:12px;
+        background: #D6350F;
+        padding:4px;
+        border-radius:3px;
+
+    }
+    .info-label {
+        display: inline-block;
+        width: 100%;
+        font-size:12px;
+        background: #65A5BA;
+        padding:4px;
+        border-radius:3px;
+
+    }
 .per_sms {
 	background: #DBDBDB;
 	border-bottom: 1px solid #fff;

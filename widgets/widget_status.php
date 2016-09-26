@@ -1,4 +1,4 @@
-<div class="widget">
+<div class="widget margin-bot-10">
 <div id="status">
 <!-- content display from ./widgets/ajax_getapps.php -->
 <div class="loading">

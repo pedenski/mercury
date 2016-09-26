@@ -118,7 +118,10 @@ include 'includes/header.php' ;
 	           </div>	-->
 
 	            <?php
-            	if(!empty($session))  { 	include "widgets/widget_status.php"; } 
+            	if(!empty($session))  { 	
+                include "widgets/widget_status.php"; 
+                include "widgets/widget_topdest.php";
+                } 
              	?>
 	         
 

@@ -10,14 +10,23 @@ function PDOconn() { //connect to remote DB
 /* CONNECT TO DB PDO */
 function PDOconnLocal() { //connect to remote DB
  $user = "root";
- $pass = "";
+ $pass = "a1b2c3d4";
  $db = new PDO('mysql:host=localhost;dbname=mercury_db', $user, $pass);
  return $db;
 }
 
 function get_app() {
 	$db = PDOconn();
-	$query = "SELECT * FROM applications";
+	$query = "SELECT * FROM applications ORDER BY enabled DESC";
+	$sql = $db->prepare($query);
+	$sql->execute();
+	$row = $sql->fetchALL();
+	return $row;
+}
+
+function get_topdestination() {
+	$db = PDOconn();
+	$query = "SELECT Destination,COUNT(*) as count FROM sms GROUP BY Destination ORDER BY count DESC LIMIT 5;";
 	$sql = $db->prepare($query);
 	$sql->execute();
 	$row = $sql->fetchALL();

@@ -4,21 +4,24 @@ $(document).ready(function(){
   /*app status */	
   $( "#status" ).load( "./widgets/ajax_getapps.php", function( response, status, xhr ) {
   $('#loading').hide();
-
-});
+  });
+   /*top destination status */  
+  $( "#toplist" ).load( "./widgets/ajax_topdest.php", function( response, status, xhr ) {
+  $('#loading').hide();
+  });
   /* load sms from db */
   $( "#sms" ).load( "./widgets/ajax_sms.php", function( response, status, xhr ) {
   $('#loading').hide();
 
   /*activate time ago - must above #sms widget to work */
-  jQuery("time.timeago").timeago();
-  $("[data-toggle='tooltip']").tooltip();
- 	 
-  $('.digits').click(function(e) {
-  	$("[data-toggle='tooltip']").tooltip();
-    e.preventDefault();
-	});
-  });
+    jQuery("time.timeago").timeago();
+    $("[data-toggle='tooltip']").tooltip();
+   	 
+    $('.digits').click(function(e) {
+    	$("[data-toggle='tooltip']").tooltip();
+      e.preventDefault();
+  	});
+    });
 
    $(".showmore").click(function(){
          $('.composer_checkb').toggle();
@@ -61,11 +64,24 @@ $(document).ready(function(){
       e.preventDefault(); // avoid to execute the actual submit of the form.
   });
 
+  //$(".composer").on({
+   //   'keyup': function(){
+    //    var text = $(this).val();
+     //   var regex = /\W*((?i)@all(?-i))\W*/;
+      //  
+      // if(text.match(regex)) {
+      //   console.log("ok");
+      // }
 
 
+      //}
 
 
-}); /* $(document).ready
+  //});
+
+
+}); /* $(document).ready */
+
 
 
 
@@ -126,6 +142,7 @@ $(function() {
 
 
 //[^@][0-9]{1,3} @1234
+//\/(.*?)\/ @capture string between / word /
 
 
 /* AJAX - submit comment to database and display comment without refresh */

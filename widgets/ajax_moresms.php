@@ -28,7 +28,7 @@ $query = "SELECT * FROM sms WHERE ID < ".$last_id." ORDER BY ID DESC LIMIT 5";
 	        	<div class="timeline-heading">
 	        		<a href="#" class="digits" data-toggle="tooltip" data-placement="top" title="<?php echo $origin; ?>"> 
 	        			<?php echo substr($origin, -4); ?> 
-	        		<img width="16px" height="8px" src="./styles/images/icons/mail.png"/> 
+	        		<i class="fa fa-envelope-o"></i>
 			
 			       	<a href="#" class="digits" data-toggle="tooltip" data-placement="top" title="<?php echo $dest; ?> ">
 			       		<?php echo substr($dest, -4); ?> </a> 
