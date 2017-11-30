@@ -82,7 +82,7 @@ function insert_sms($receiver,$sms){
 
 function broadcast($num,$sms){
 $url = 'http://10.167.95.42:8080/SMSCGateway/Sender';
-$data = array('Username' => 'technolab', 'Password' => 'Inn0v@t10n','Destination' => $num, 'SMS' => $sms);
+$data = array('Username' => '***', 'Password' => '***','Destination' => $num, 'SMS' => $sms);
 
 $options = array(
     'http' => array(
